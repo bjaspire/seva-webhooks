@@ -1,8 +1,7 @@
 name: Send message to Google Chat
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: '45 13 * * *'
 jobs:
   send-message:
     runs-on: ubuntu-latest
@@ -12,7 +11,7 @@ jobs:
     - name: Post Google Chat message
       uses: julb/action-post-googlechat-message@v1
       with:
-        message: "Hello"
+        message: "पैसो चै तिरम है गाइच"
         gchat_webhook_url: "https://chat.googleapis.com/v1/spaces/AAAAO-mZRrw/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=WV7XngAsUbbgGzQWf4aTk5h9QpSUUbkMU-ztEsS4QBo%3D"
 
    
