@@ -14,4 +14,4 @@ jobs:
       env:
         GOOGLE_CHAT_WEBHOOK_URL: "https://chat.googleapis.com/v1/spaces/AAAAO-mZRrw/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=WV7XngAsUbbgGzQWf4aTk5h9QpSUUbkMU-ztEsS4QBo%3D"
       with:
-        message: "Please transfer."
+        message: "Please transfer"
