@@ -9,9 +9,10 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Send message to Google Chat
-      uses: rtCamp/action-google-chat-notify@v1
-      env:
-        GOOGLE_CHAT_WEBHOOK_URL: "https://chat.googleapis.com/v1/spaces/AAAAO-mZRrw/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=WV7XngAsUbbgGzQWf4aTk5h9QpSUUbkMU-ztEsS4QBo%3D"
+    - name: Post Google Chat message
+      uses: julb/action-post-googlechat-message@v1
       with:
-        message: "Please transfer"
+        message: "Hello"
+        gchat_webhook_url: "https://chat.googleapis.com/v1/spaces/AAAAO-mZRrw/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=WV7XngAsUbbgGzQWf4aTk5h9QpSUUbkMU-ztEsS4QBo%3D"
+
+   
