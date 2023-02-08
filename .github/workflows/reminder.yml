@@ -1,7 +1,7 @@
 name: Send message to Google Chat
 on:
-  schedule:
-    - cron: '45 13 * * *'
+#   schedule:
+#     - cron: '45 13 * * *'
 jobs:
   send-message:
     runs-on: ubuntu-latest
